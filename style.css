@@ -1,15 +1,17 @@
 body{
     font-family: monospace, sans-serif;
     text-align: center;
-    background-color: rgb(230, 255, 255);
+    background-color: #e6ffff;
 }
 
 #listOfHabilities, #habilities{
     text-align: left;
+    text-decoration: none;
 }
 
 #listOfHabilities {
-    background-color: #ccffff;
+    background-color: #99ffff;
+    border-radius: 6px;
 }
 
 .description {
@@ -22,6 +24,7 @@ body{
 
 .links {
     color: #009999;
+    text-decoration: none;
 }
 
 #html {
@@ -30,5 +33,13 @@ body{
 
 #image{
     border-radius: 5%;
+    background-color: #009999;
+    padding: 0px 0px 3px 3px;
+}
 
+.button{
+    color: #e6ffff;
+    background-color: #009999;    
+    padding: 15px 30px 15px 30px;
+    border-radius: 4px;
 }
