@@ -8,10 +8,22 @@ body{
     text-align: left;
 }
 
+#listaDeHabilidades {
+    background-color: #ccffff;
+}
+
 .descricao {
     font-size: 20px;
 }
 
+#localidade {
+    text-decoration: underline;
+}
+
 .links {
     color: cyan;
+}
+
+#html {
+    font-size: 1.1em;
 }
