@@ -1,12 +1,17 @@
 body{
     font-family: monospace, sans-serif;
     text-align: center;
+    background-color: rgb(230, 255, 255);
 }
 
-#listaDeHabilidades{
+#listaDeHabilidades, #habilidades{
     text-align: left;
 }
 
-#habilidades{
-    text-align: left;
+.descricao {
+    font-size: 20px;
+}
+
+.links {
+    color: cyan;
 }
