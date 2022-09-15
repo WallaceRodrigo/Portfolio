@@ -4,26 +4,31 @@ body{
     background-color: rgb(230, 255, 255);
 }
 
-#listaDeHabilidades, #habilidades{
+#listOfHabilities, #habilities{
     text-align: left;
 }
 
-#listaDeHabilidades {
+#listOfHabilities {
     background-color: #ccffff;
 }
 
-.descricao {
+.description {
     font-size: 20px;
 }
 
-#localidade {
+#location {
     text-decoration: underline;
 }
 
 .links {
-    color: cyan;
+    color: #009999;
 }
 
 #html {
     font-size: 1.1em;
+}
+
+#image{
+    border-radius: 5%;
+
 }
