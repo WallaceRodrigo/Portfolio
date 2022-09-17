@@ -4,7 +4,12 @@ body{
     background-color: #e6ffff;
 }
 
-    #habilities{
+#name {
+    position: absolute;
+    top: 300px;
+}
+
+#habilities {
     text-align: center;
     margin-inline: 29%;
 }
@@ -23,6 +28,10 @@ body{
 
 #location {
     text-decoration: underline;
+    font-size: 16px;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
 }
 
 .links {
@@ -37,6 +46,8 @@ body{
 #image{
     border-radius: 5%;
     box-shadow: 4px 4px #009999;
+    position: absolute;
+    left: 30px;
 }
 
 .button{
@@ -44,4 +55,36 @@ body{
     background-color: #009999;    
     padding: 15px 30px 15px 30px;
     border-radius: 4px;
+}
+
+.hoverButton:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: #008888;
+}
+
+.hoverButton:active {
+    background-color: white;
+    color: #009999
+}
+
+#github {
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+}
+
+#linkedin {
+    position: absolute;
+    bottom: 30px;
+    left: 170px;
+}
+
+.hover:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+div.description {
+    position
 }
