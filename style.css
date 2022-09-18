@@ -86,6 +86,8 @@ body{
     text-decoration: underline;
 }
 
-div.description {
-
+.leftDescription {
+    position: relative;
+    top: 500px;
 }
+
