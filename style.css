@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: monospace, sans-serif;
     text-align: center;
@@ -9,12 +14,12 @@ body{
     margin-right: 100px;
 }
 
-#abilities {
+.subDescription >h2 {
     text-align: center;
-    margin-inline: 52%;
+    margin-inline: 51.5%;
 }
 
-#listOfAbilities {
+.subDescription >ul {
     text-align: left;
     list-style-type: none;
     background-color: #ccffff;
@@ -23,7 +28,7 @@ body{
     margin-inline: 38%;
     padding: 10px;
     position: relative;
-    left: 130px;
+    left: 120px;
 }
 
 .description {
@@ -49,7 +54,7 @@ body{
     text-decoration: none;
 }
 
-#preferred {
+.subDescription li:not(:nth-child(n + 2)) {
     font-size: 1.2em;
 }
 
@@ -59,6 +64,7 @@ body{
     position: relative;
     float: left;
     margin-left: 30px;
+    top: 16px;
 }
 
 .button{
@@ -81,13 +87,13 @@ body{
 
 .leftDescription #github {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     left: 80px;
 }
 
 .leftDescription #linkedin {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     left: 170px;
 }
 
@@ -99,4 +105,8 @@ body{
 .leftDescription {
     position: relative;
     top: 500px;
+}
+
+.buttons {
+
 }
