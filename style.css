@@ -9,12 +9,12 @@ body{
     top: 300px;
 }
 
-#habilities {
+#abilities {
     text-align: center;
     margin-inline: 29%;
 }
 
-#listOfHabilities {
+#listOfAbilities {
     text-align: left;
     background-color: #ccffff;
     border-style: solid;
@@ -46,8 +46,9 @@ body{
 #image{
     border-radius: 5%;
     box-shadow: 4px 4px #009999;
-    position: absolute;
-    left: 30px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
 }
 
 .button{
@@ -86,5 +87,5 @@ body{
 }
 
 div.description {
-    position
+
 }
