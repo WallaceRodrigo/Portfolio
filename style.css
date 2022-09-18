@@ -48,7 +48,7 @@ body{
     font-size: 16px;
     position: absolute;
     bottom: 40px;
-    left: 50px;
+    left: 65px;
 }
 
 .links {
@@ -90,13 +90,13 @@ body{
 .leftDescription #github {
     position: absolute;
     bottom: 15px;
-    left: 80px;
+    left: 100px;
 }
 
 .leftDescription #linkedin {
     position: absolute;
     bottom: 15px;
-    left: 170px;
+    left: 195px;
 }
 
 .hover:hover {
