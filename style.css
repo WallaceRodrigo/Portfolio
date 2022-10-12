@@ -1,4 +1,133 @@
 * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/3a/0b/40/3a0b40d96c53860572a1c29970ce14a8.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white;
+}
+
+#initialPage {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 1100px;
+  color: white;
+}
+
+#initialPage h1{
+  font-size: 4em;
+}
+
+#initialPage h2{
+  font-family:Courier;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+.trybe:hover {
+  color: #1EB720;
+  opacity: 0.8;
+}
+
+#startBtn {
+  margin-top: 100px;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: rgb(188, 155, 219);
+  transition: 0.3s;
+}
+
+#startBtn:hover {
+  background-color: rgb(170, 95, 240);
+  box-shadow: 0px 0px 10px white;
+}
+
+#startBtn a {
+  color: black;
+}
+
+#aboutMe {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 400px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#aboutMe h2 {
+  margin-bottom: 80px;
+  background-color: #0a0518;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid blueviolet;
+}
+
+#aboutMe div {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0a0518;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+}
+
+#aboutMe div div {
+  text-align: left;
+  max-width: 760px;
+  box-shadow: 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.purple {
+  color: blueviolet;
+}
+
+.jsPink {
+color: 	#FF69B4;
+}
+
+.jsPurple {
+  color: #7B68EE;
+}
+
+.trybeGreen {
+  color: #1EB720;
+}
+
+.aqua {
+  color: aqua;
+}
+
+.jsYellow {
+  color: #fff385;
+}
+
+
+
+
+
+
+/** {
     margin: 0;
     padding: 0;
 }
@@ -112,4 +241,4 @@ body{
 .buttons {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 8px;
-}
+}*/
