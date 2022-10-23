@@ -41,8 +41,11 @@ a:hover {
   opacity: 0.8;
 }
 
+#firsth2 {
+  margin-bottom: 100px;
+}
+
 #startBtn {
-  margin-top: 100px;
   padding: 10px 50px;
   border-radius: 20px;
   background-color: rgb(188, 155, 219);
@@ -64,7 +67,16 @@ a:hover {
   align-items: center;
   margin-top: 400px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
+  font-size: 1.7em;
+}
+
+#aboutMe-div {
+  transition: 0.3s;
+}
+
+#aboutMe-div:hover {
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
 }
 
 #aboutMe h2 {
@@ -88,15 +100,45 @@ a:hover {
   box-shadow: 0px 0px 0px;
 }
 
+#contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0a0518;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+  width: 80%;
+  margin-bottom: 200px;
+  display: flex;
+  transition: 0.3s;
+}
 
+#contact:hover {
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+}
 
+#contact img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  margin-bottom: 20px;
+}
 
+#contact p {
+  margin-left: 20px;
+}
 
+#image-links {
+  text-align: center;
+  font-size: 1.5em;
+}
 
-
-
-
-
+#about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .purple {
   color: blueviolet;
@@ -122,8 +164,13 @@ color: 	#FF69B4;
   color: #fff385;
 }
 
+.white {
+  color: white;
+}
 
-
+.red {
+  color: rgb(248, 79, 79);
+}
 
 
 
