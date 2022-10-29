@@ -11,6 +11,8 @@ body {
   color: white;
 }
 
+/* //////////////////////////////HOME//////////////////////////////////////////////// */
+
 #initialPage {
   display: flex;
   flex-flow: column;
@@ -61,6 +63,8 @@ a:hover {
   color: black;
 }
 
+/* //////////////////////////////ABOUT ME//////////////////////////////////////////////// */
+
 #aboutMe {
   display: flex;
   flex-flow: column;
@@ -99,6 +103,8 @@ a:hover {
   max-width: 760px;
   box-shadow: 0px 0px 0px;
 }
+
+/* //////////////////////////////PROJECTS//////////////////////////////////////////////// */
 
 #projects {
   padding: 20px;
@@ -161,6 +167,22 @@ a:hover {
   margin-left: 10px;
 }
 
+/* //////////////////////////////CONTACT//////////////////////////////////////////////// */
+
+#contact-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#contact-container h2 {
+  margin-bottom: 80px;
+  background-color: #0a0518;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid blueviolet;
+}
+
 #contact {
   margin-left: auto;
   margin-right: auto;
@@ -178,7 +200,7 @@ a:hover {
   box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
 }
 
-#contact img {
+#contact img, video {
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -200,6 +222,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
+/* //////////////////////////////COLORS//////////////////////////////////////////////// */
 
 .purple {
   color: blueviolet;
