@@ -3,7 +3,6 @@ import projectPixelsArt from './projectPixelsArt.gif';
 
 export const projectsData = [
   {
-    id: 1,
     name: 'Trybe Project Pixels Art',
     gif: projectPixelsArt,
     description: `Foi um dos meus primeiros projetos unindo HTLM, CSS e JavaScript,
@@ -14,7 +13,6 @@ export const projectsData = [
   },
 
   {
-    id: 2,
     name: 'Trybe Project Shopping cart',
     gif: shoppingCartGif,
     description: `Mais um projeto feito em sua maior parte apenas com JS,

@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../components/Header';
 import Infos from '../components/Infos';
 
 function AboutMe() {
   return (
-    <div>
+    <div style={ { overflow: 'hidden' } }>
+      <Header />
       <Infos />
     </div>
   );

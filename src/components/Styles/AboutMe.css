@@ -2,11 +2,16 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 400px;
   text-align: center;
   margin-bottom: 200px;
   font-size: 1.7em;
   color: white;
+  padding-top: 150px;
+  position: relative;
+  right: 100px;
+  transition: 2s;
+  opacity: 0;
+  animation: slideRight 1s forwards;
 }
 
 #aboutMe-div {
@@ -40,4 +45,8 @@
 
 #aboutMe a {
   text-decoration: none;
+}
+
+@keyframes slideRight {
+  100% { right: 0; opacity: 1; }
 }

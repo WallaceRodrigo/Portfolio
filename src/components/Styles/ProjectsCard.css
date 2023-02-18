@@ -4,15 +4,14 @@
   flex-flow: column;
   align-items: center;
   color: white;
-}
-
-.hidden {
+  position: relative;
+  left: 100px;
+  transition: 2s;
   opacity: 0;
-  transition: opacity 0.5s linear;
 }
 
 .hiddenOff {
-  opacity: 1;
+  animation: slide 1s forwards;
 }
 
 #projects h2{
@@ -23,7 +22,7 @@
   border: 2px solid blueviolet;
 }
 
-#projects-div ul {
+#projects-div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -41,6 +40,7 @@
   box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
   transition: 0.3s;
   margin-bottom: 50px;
+  margin: 20px;
 }
 
 #projects-div ul:hover {
@@ -73,4 +73,8 @@
 
 a:hover {
   color: blueviolet;
+}
+
+@keyframes slide {
+  100% { left: 0; opacity: 1; }
 }

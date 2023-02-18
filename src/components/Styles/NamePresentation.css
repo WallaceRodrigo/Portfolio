@@ -9,6 +9,7 @@
   left: -1200px;
   animation: slide 1s forwards;
   transition: 2s;
+  opacity: 0;
 }
 
 #initialPage h1{
@@ -49,5 +50,5 @@
 }
 
 @keyframes slide {
-  100% { left: 0; }
+  100% { left: 0; opacity: 1; }
 }

@@ -4,43 +4,23 @@ import { VscGithub } from 'react-icons/vsc';
 import { MdOpenInNew } from 'react-icons/md';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
+import { useInView } from 'react-intersection-observer';
 import { projectsData } from '../content/projectsData';
 import './Styles/ProjectsCard.css';
 
 function ProjectCard() {
   const middle = 0.5;
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio >= middle) {
-      entries[0].target.classList.add('hiddenOff');
-    }
-  }, {
-    threshold: 0.5,
-  });
+  const { ref, inView, entry } = useInView({ threshold: middle });
 
   useEffect(() => {
-    observer.observe(document.querySelector('#projects'));
-
-    // MODELO PARA MAIS DE UM ELEMENTO
-    // const observer = new IntersectionObserver((entries) => {
-    //   console.log(entries);
-    //   entries.map((entry) => {
-    //     if (entry.intersectionRatio >= 1) {
-    //       entry.target.classList.add('hiddenOff');
-    //     }
-    //     return 0;
-    //   });
-    // }, {
-    //   threshold: 1,
-    // });
-
-    // Array.from(document.querySelectorAll('#projects')).map((el) => {
-    //   observer.observe(el);
-    //   return console.log(el);
-    // });
-  });
+    if (inView) {
+      entry.target.classList.add('hiddenOff');
+      ref('');
+    }
+  }, [entry, inView, ref]);
 
   return (
-    <div id="projects" className="hidden">
+    <div id="projects" ref={ ref }>
 
       <h2>
         <span className="trybeGreen" style={ { position: 'relative', bottom: '2px' } }>
@@ -57,10 +37,10 @@ function ProjectCard() {
       </h2>
 
       <div id="projects-div">
-        <ul>
-          {
-            projectsData.map((proj) => (
-              <li key={ proj.id }>
+        {
+          projectsData.map((proj, index) => (
+            <ul key={ index }>
+              <li>
                 <h3>{ proj.name }</h3>
                 <img src={ proj.gif } alt={ `${proj.name} video` } />
                 <p>{ proj.description }</p>
@@ -83,9 +63,9 @@ function ProjectCard() {
                   </a>
                 </section>
               </li>
-            ))
-          }
-        </ul>
+            </ul>
+          ))
+        }
       </div>
     </div>
   );

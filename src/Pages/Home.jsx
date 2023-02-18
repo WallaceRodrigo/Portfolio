@@ -7,7 +7,7 @@ import ProjectCard from '../components/ProjectsCard';
 
 function Home({ history }) {
   return (
-    <div>
+    <div style={ { overflow: 'hidden' } }>
       <Header />
       <NamePresentation />
       <ProjectCard />
