@@ -1,0 +1,7 @@
+.Header {
+  display: flex;
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}

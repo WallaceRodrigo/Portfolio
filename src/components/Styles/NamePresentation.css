@@ -1,0 +1,53 @@
+#initialPage {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 1100px;
+  color: white;
+  position: relative;
+  left: -1200px;
+  animation: slide 1s forwards;
+  transition: 2s;
+}
+
+#initialPage h1{
+  font-size: 4em;
+}
+
+#initialPage h2{
+  font-family:Courier;
+}
+
+.trybe:hover {
+  color: #1EB720;
+  opacity: 0.8;
+}
+
+#firstH2 {
+  margin-bottom: 100px;
+}
+
+#startBtn {
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: rgb(188, 155, 219);
+  transition: 0.3s;
+}
+
+#startBtn:hover {
+  background-color: rgb(170, 95, 240);
+  box-shadow: 0px 0px 10px white;
+}
+
+#startBtn a {
+  color: black;
+}
+
+#initialPage a {
+  text-decoration: none;
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}

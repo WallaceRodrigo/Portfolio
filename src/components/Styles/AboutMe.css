@@ -1,0 +1,43 @@
+#aboutMe {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 400px;
+  text-align: center;
+  margin-bottom: 200px;
+  font-size: 1.7em;
+  color: white;
+}
+
+#aboutMe-div {
+  transition: 0.3s;
+}
+
+#aboutMe-div:hover {
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+}
+
+#aboutMe h2 {
+  margin-bottom: 80px;
+  background-color: #0a0518;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid blueviolet;
+}
+
+#aboutMe div {
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0a0518;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+}
+
+#aboutMe div div {
+  text-align: left;
+  max-width: 760px;
+  box-shadow: 0px 0px 0px;
+}
+
+#aboutMe a {
+  text-decoration: none;
+}

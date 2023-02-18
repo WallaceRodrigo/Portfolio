@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: url('https://i.pinimg.com/originals/3a/0b/40/3a0b40d96c53860572a1c29970ce14a8.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* //////////////////////////////HOME//////////////////////////////////////////////// */
+
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: blueviolet;
 }
+
+/* //////////////////////////////ABOUT ME//////////////////////////////////////////////// */
+
+/* //////////////////////////////PROJECTS//////////////////////////////////////////////// */
+
+/* //////////////////////////////CONTACT//////////////////////////////////////////////// */
+
+#contact-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#contact-container h2 {
+  margin-bottom: 80px;
+  background-color: #0a0518;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid blueviolet;
+}
+
+#contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #0a0518;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+  width: 80%;
+  margin-bottom: 200px;
+  display: flex;
+  transition: 0.3s;
+}
+
+#contact:hover {
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+}
+
+#contact img, video {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-left: 20px;
+}
+
+#image-links {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* //////////////////////////////COLORS//////////////////////////////////////////////// */
+
+.purple {
+  color: blueviolet;
+}
+
+.jsPink {
+color: 	#FF69B4;
+}
+
+.jsPurple {
+  color: #7B68EE;
+}
+
+.trybeGreen {
+  color: #1EB720;
+}
+
+.aqua {
+  color: aqua;
+}
+
+.jsYellow {
+  color: #fff385;
+}
+
+.white {
+  color: white;
+}
+
+.red {
+  color: rgb(248, 79, 79);
+}
+
+
+
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: monospace, sans-serif;
+    text-align: center;
+    background-color: #e6ffff;
+    background: rgb(36,36,36);
+    background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgb(97, 96, 96) 100%);
+}
+
+.description >h1 {
+    margin-left: 350px;
+    margin-right: 100px;
+}
+
+.subDescription >h2 {
+    text-align: center;
+    margin-inline: 51.5%;
+}
+
+.subDescription >ul {
+    text-align: left;
+    list-style-type: none;
+    background-color: #99999980;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 15px;
+    margin-inline: 38%;
+    padding: 10px;
+    position: relative;
+    left: 120px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.description >p {
+    font-size: 20px;
+    margin-left: 350px;
+    margin-right: 100px;
+}
+
+#location {
+    text-decoration: underline;
+    font-size: 16px;
+    position: absolute;
+    bottom: 40px;
+    left: 65px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.subDescription li:not(:nth-child(n + 2)) {
+    font-size: 1.2em;
+}
+
+#image{
+    border-radius: 5%;
+    box-shadow: 4px 4px 4px black;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    top: 60px;
+}
+
+.button {
+    color: white;
+    background-color: gray;    
+    padding: 15px 30px 15px 30px;
+    border-radius: 4px;
+}
+
+.hoverButton:hover {
+    color: white;
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom right, black, gray);
+}
+
+.hoverButton:active {
+    background-image: linear-gradient(to bottom right, gray, black);
+    color: black;
+}
+
+.leftDescription #github {
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+}
+
+.leftDescription #linkedin {
+    position: absolute;
+    bottom: 15px;
+    left: 195px;
+}
+
+.hover:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.leftDescription {
+    position: relative;
+    top: 535px;
+}
+
+.buttons {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}*/

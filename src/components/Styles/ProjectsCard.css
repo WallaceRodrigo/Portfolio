@@ -1,0 +1,76 @@
+#projects {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.hiddenOff {
+  opacity: 1;
+}
+
+#projects h2{
+  margin-bottom: 80px;
+  background-color: #0a0518;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid blueviolet;
+}
+
+#projects-div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+#projects-div ul{
+  list-style: none;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 30px;
+  background-color: #0a0518;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+
+#projects-div ul:hover {
+  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+}
+
+#projects-div li{
+  max-width: 350px;
+  margin: 0px 20px;
+}
+
+#projects-div img {
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(68, 0, 255, 0.6);
+}
+
+#projects-div a {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.project-links {
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+a:hover {
+  color: blueviolet;
+}
