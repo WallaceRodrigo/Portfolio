@@ -22,8 +22,8 @@ function NamePresentation() {
       </h2>
       <a href="#projects">
         <h3>
-          <button id="startBtn">
-            Start
+          <button id="projectsButton">
+            Projects
           </button>
         </h3>
       </a>

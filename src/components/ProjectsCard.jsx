@@ -43,7 +43,7 @@ function ProjectCard() {
               <li>
                 <h3>{ proj.name }</h3>
                 <img src={ proj.gif } alt={ `${proj.name} video` } />
-                <p>{ proj.description }</p>
+                <p className="projectDescription">{ proj.description }</p>
                 <section className="project-links">
                   <a
                     href={ proj.github }

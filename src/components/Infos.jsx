@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import './Styles/AboutMe.css';
+import './Styles/Infos.css';
 
 function Infos() {
   return (

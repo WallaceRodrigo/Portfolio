@@ -1,0 +1,162 @@
+#DropDownContainer {
+  position: relative;
+}
+
+#DropDownMainContainer {
+  position: relative;
+  right: 15px;
+  top: 75px;
+  height: 200px;
+}
+
+.DropDown {
+  background-color: white;
+  position: relative;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 1;
+  animation: slideDropDown 1s forwards;
+  z-index: 2;
+  top: -3px;
+}
+
+.DropDownLeave {
+  background-color: white;
+  position: relative;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 1;
+  animation: slideDropDownLeave 1s forwards;
+  animation-delay: 1s;
+  z-index: 2;
+  top: -3px;
+}
+
+#dropDownButton {
+  position: absolute;
+  font-size: 40px;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: transparent;
+  margin: 0px 10px;
+  transition: .5s;
+  z-index: 2;
+  top: -3px;
+  right: 0;
+}
+
+.leaveButton{
+  right: 0px;
+  animation: slideButtonLeave 1s forwards;
+}
+
+.DropDown button:active {
+  filter: opacity(70%);
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: .5s;
+  position: relative;
+  left: 120px;
+  animation: slideLeft 1s forwards;
+}
+
+#navContainer {
+  height: 210px;
+  position: relative;
+  bottom: 36px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.navigationLinksDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 180px;
+  height: 170px;
+  opacity: 0;
+  animation: slideDown 1s forwards;
+  padding: 10px;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  visibility: visible;
+}
+
+.navigationLinksDivLeave {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 180px;
+  height: 170px;
+  opacity: 1;
+  position: absolute;
+  visibility: visible;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  animation: slideTop 1s forwards;
+}
+
+.navigationLinks {
+  display: flex;
+  align-items: baseline;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.navigationLinks h4{
+  margin-left: 5px
+}
+
+@keyframes slideDown {
+  50%  { top: -150px; opacity: 0;}
+  90%  { opacity: 1;}
+  100% { top: 24px; opacity: 1; }
+}
+
+@keyframes slideTop {
+  0%  { top: 24px; opacity: 1;}
+  50%  { top: 24px; opacity: 1;}
+  70%  { opacity: 1;}
+  90%  { opacity: 1;}
+  100% { top: -150px; opacity: 0; }
+}
+
+@keyframes slideButtonLeave {
+  0% { right: 130px;}
+  50%  { right: 120px; }
+  100% { right: 0px; }
+}
+
+@keyframes slideLeft {
+  0% { right: 0px;}
+  100% { left: 0px;}
+}
+
+@keyframes apear {
+  100% { opacity: 1;}
+}
+
+@keyframes vanish {
+  60% { background-color: white;}
+  100% { background-color: transparent;}
+}
+
+@keyframes slideDropDown {
+  0% { width: 40px;}
+  100% { width: 180px;}
+}
+
+@keyframes slideDropDownLeave {
+  0% { width: 180px;}
+  70% { opacity: 1; border-radius: 10px; }
+  90% { border-radius: 30px;}
+  100% { width: 50px; opacity: 0; border-radius: 100px;}
+}

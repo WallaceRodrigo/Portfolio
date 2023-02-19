@@ -71,6 +71,10 @@
   margin-left: 250px;
 }
 
+.projectDescription {
+  height: 150px;
+}
+
 a:hover {
   color: blueviolet;
 }

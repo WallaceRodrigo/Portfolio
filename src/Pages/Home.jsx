@@ -5,24 +5,12 @@ import Header from '../components/Header';
 import NamePresentation from '../components/NamePresentation';
 import ProjectCard from '../components/ProjectsCard';
 
-function Home({ history }) {
+function Home() {
   return (
     <div style={ { overflow: 'hidden' } }>
       <Header />
       <NamePresentation />
       <ProjectCard />
-      <button
-        id="startBtn"
-        onClick={ () => history.push('/aboutMe') }
-      >
-        Sobre Mim
-      </button>
-      <button
-        id="startBtn"
-        onClick={ () => history.push('/Contact') }
-      >
-        Contato
-      </button>
     </div>
   );
 }
