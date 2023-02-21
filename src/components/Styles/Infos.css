@@ -19,7 +19,7 @@
 }
 
 #aboutMe-div:hover {
-  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  box-shadow: 0 0 20px rgba(183, 0, 255, 0.6);
 }
 
 #aboutMe h2 {
@@ -40,7 +40,7 @@
 #aboutMe div div {
   text-align: left;
   max-width: 760px;
-  box-shadow: 0px 0px 0px;
+  box-shadow: 0 0 0;
 }
 
 #aboutMe a {
@@ -48,5 +48,7 @@
 }
 
 @keyframes slideRight {
-  100% { right: 0; opacity: 1; }
+
+  100% { right: 0;
+    opacity: 1; }
 }

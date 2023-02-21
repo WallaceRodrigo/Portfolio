@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: 1100px;
-  color: white;
   position: relative;
   left: -1200px;
   animation: slide 1s forwards;
@@ -12,16 +11,16 @@
   opacity: 0;
 }
 
-#initialPage h1{
+#initialPage h1 {
   font-size: 4em;
 }
 
-#initialPage h2{
-  font-family:Courier;
+#initialPage h2 {
+  font-family: Courier;
 }
 
 .trybe:hover {
-  color: #1EB720;
+  color: #1eb720;
   opacity: 0.8;
 }
 
@@ -38,7 +37,7 @@
 
 #projectsButton:hover {
   background-color: rgb(170, 95, 240);
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0 0 10px white;
 }
 
 #projectsButton a {
@@ -50,5 +49,7 @@
 }
 
 @keyframes slide {
-  100% { left: 0; opacity: 1; }
+
+  100% { left: 0;
+    opacity: 1; }
 }

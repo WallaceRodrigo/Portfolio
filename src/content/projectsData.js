@@ -15,7 +15,7 @@ export const projectsData = [
   {
     name: 'Trybe Project Shopping cart',
     gif: shoppingCartGif,
-    description: `Mais um projeto feito em sua maior parte apenas com JS,
+    description: `Foi meu primeiro projeto com ReactJS,
      é um carrinho de compras completamente funcional,
     conta com funções de adicionar itens ao carrinho, remove-los, 
     contador preciso de valor dos itens e consulta de CEP com o uso de API's`,

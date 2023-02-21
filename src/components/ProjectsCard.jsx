@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { VscGithub } from 'react-icons/vsc';
 import { MdOpenInNew } from 'react-icons/md';
@@ -7,10 +7,13 @@ import { FaLongArrowAltRight } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { projectsData } from '../content/projectsData';
 import './Styles/ProjectsCard.css';
+import '../App.css';
+import DarkLightMode from '../context/DarkLightMode';
 
 function ProjectCard() {
-  const middle = 0.5;
-  const { ref, inView, entry } = useInView({ threshold: middle });
+  const threshold = 0.3;
+  const { ref, inView, entry } = useInView({ threshold });
+  const { darkLightMode } = useContext(DarkLightMode);
 
   useEffect(() => {
     if (inView) {
@@ -22,7 +25,7 @@ function ProjectCard() {
   return (
     <div id="projects" ref={ ref }>
 
-      <h2>
+      <h2 className={ `${darkLightMode}BackGround` }>
         <span className="trybeGreen" style={ { position: 'relative', bottom: '2px' } }>
           <FaLongArrowAltRight />
         </span>
@@ -39,7 +42,7 @@ function ProjectCard() {
       <div id="projects-div">
         {
           projectsData.map((proj, index) => (
-            <ul key={ index }>
+            <ul key={ index } className={ `${darkLightMode}BackGround` }>
               <li>
                 <h3>{ proj.name }</h3>
                 <img src={ proj.gif } alt={ `${proj.name} video` } />
@@ -51,7 +54,7 @@ function ProjectCard() {
                     className="white"
                     target="_blank"
                   >
-                    <VscGithub />
+                    <VscGithub className={ `${darkLightMode}Icons` } />
                   </a>
                   <a
                     href={ proj.link }
@@ -59,7 +62,7 @@ function ProjectCard() {
                     className="white"
                     target="_blank"
                   >
-                    <MdOpenInNew />
+                    <MdOpenInNew className={ `${darkLightMode}Icons` } />
                   </a>
                 </section>
               </li>

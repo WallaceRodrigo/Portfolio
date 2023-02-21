@@ -3,53 +3,49 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  color: white;
   position: relative;
   left: 100px;
-  transition: 2s;
   opacity: 0;
+  margin-top: -250px;
 }
 
 .hiddenOff {
   animation: slide 1s forwards;
 }
 
-#projects h2{
+#projects h2 {
   margin-bottom: 80px;
-  background-color: #0a0518;
   padding: 20px;
   border-radius: 30px;
-  border: 2px solid blueviolet;
+  box-shadow: 1px 2px 5px rgb(110, 110, 110);
 }
 
 #projects-div {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   max-width: 100%;
-  flex-wrap: wrap;
   margin-bottom: 200px;
 }
 
-#projects-div ul{
+#projects-div ul {
   list-style: none;
   text-align: center;
   padding: 20px 10px;
   border-radius: 30px;
-  background-color: #0a0518;
-  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.233);
+  box-shadow: 1px 2px 5px rgb(110, 110, 110);
   transition: 0.3s;
   margin-bottom: 50px;
   margin: 20px;
 }
 
 #projects-div ul:hover {
-  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  box-shadow: 0 0 20px rgba(183, 0, 255, 0.6);
 }
 
-#projects-div li{
+#projects-div li {
   max-width: 350px;
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 #projects-div img {
@@ -58,7 +54,7 @@
   margin-top: 10px;
   margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 5px 5px 20px rgba(68, 0, 255, 0.6);
+  box-shadow: 1px 2px 5px rgb(110, 110, 110);
 }
 
 #projects-div a {
@@ -67,8 +63,9 @@
 }
 
 .project-links {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 20px;
-  margin-left: 250px;
 }
 
 .projectDescription {
@@ -80,5 +77,7 @@ a:hover {
 }
 
 @keyframes slide {
-  100% { left: 0; opacity: 1; }
+
+  100% { left: 0;
+    opacity: 1; }
 }

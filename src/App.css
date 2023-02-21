@@ -4,15 +4,68 @@
 }
 
 body {
-  background-image: url('https://i.pinimg.com/originals/3a/0b/40/3a0b40d96c53860572a1c29970ce14a8.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+
+  /* background-image: url('https://i.pinimg.com/originals/3a/0b/40/3a0b40d96c53860572a1c29970ce14a8.gif'); */
+
+  /* background-repeat: no-repeat; */
+
+  /* background-attachment: fixed; */
+
+  /* background-size: 100% 100%; */
   color: white;
 }
 
-/* //////////////////////////////HOME//////////////////////////////////////////////// */
+.dark {
+  background-color: #181719;
+  color: #fff;
+  transition: 1s;
+}
 
+.light {
+  background-color: #f4f2f7;
+  color: #27242c;
+  transition: 1s;
+}
+
+.darkIcons {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.lightIcons {
+  color: black;
+  transition: 0.2s;
+}
+
+.darkIcons:hover {
+  filter: opacity(45%);
+}
+
+.lightIcons:hover {
+  filter: opacity(45%);
+}
+
+.darkBackGround {
+  background-color: #27242c;
+  transition: 1s;
+}
+
+.lightBackGround {
+  background-color: #fff;
+  transition: 1s;
+}
+
+.darkAlternativeBackGround {
+  background-color: rgba(61, 58, 65, 0.9);
+  transition: 1s;
+}
+
+.lightAlternativeBackGround {
+  background-color: rgba(231, 231, 231, 0.9);
+  transition: 1s;
+}
+
+/* //////////////////////////////HOME//////////////////////////////////////////////// */
 a {
   text-decoration: none;
 }
@@ -26,7 +79,6 @@ a:hover {
 /* //////////////////////////////PROJECTS//////////////////////////////////////////////// */
 
 /* //////////////////////////////CONTACT//////////////////////////////////////////////// */
-
 #contact-container {
   display: flex;
   flex-flow: column;
@@ -55,14 +107,14 @@ a:hover {
 }
 
 #contact:hover {
-  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  box-shadow: 0 0 20px rgba(183, 0, 255, 0.6);
 }
 
-#contact img, video {
+#contact img , video {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  box-shadow: 0px 0px 20px rgba(183, 0, 255, 0.6);
+  box-shadow: 0 0 20px rgba(183, 0, 255, 0.6);
   margin-bottom: 20px;
 }
 
@@ -82,21 +134,20 @@ a:hover {
 }
 
 /* //////////////////////////////COLORS//////////////////////////////////////////////// */
-
 .purple {
   color: blueviolet;
 }
 
 .jsPink {
-color: 	#FF69B4;
+  color: #ff69b4;
 }
 
 .jsPurple {
-  color: #7B68EE;
+  color: #7b68ee;
 }
 
 .trybeGreen {
-  color: #1EB720;
+  color: #1eb720;
 }
 
 .aqua {
@@ -114,121 +165,3 @@ color: 	#FF69B4;
 .red {
   color: rgb(248, 79, 79);
 }
-
-
-
-/** {
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: monospace, sans-serif;
-    text-align: center;
-    background-color: #e6ffff;
-    background: rgb(36,36,36);
-    background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgb(97, 96, 96) 100%);
-}
-
-.description >h1 {
-    margin-left: 350px;
-    margin-right: 100px;
-}
-
-.subDescription >h2 {
-    text-align: center;
-    margin-inline: 51.5%;
-}
-
-.subDescription >ul {
-    text-align: left;
-    list-style-type: none;
-    background-color: #99999980;
-    box-shadow: 2px 2px 2px 2px black;
-    border-radius: 15px;
-    margin-inline: 38%;
-    padding: 10px;
-    position: relative;
-    left: 120px;
-}
-
-.description {
-    font-size: 20px;
-}
-
-.description >p {
-    font-size: 20px;
-    margin-left: 350px;
-    margin-right: 100px;
-}
-
-#location {
-    text-decoration: underline;
-    font-size: 16px;
-    position: absolute;
-    bottom: 40px;
-    left: 65px;
-}
-
-.links {
-    color: white;
-    text-decoration: none;
-}
-
-.subDescription li:not(:nth-child(n + 2)) {
-    font-size: 1.2em;
-}
-
-#image{
-    border-radius: 5%;
-    box-shadow: 4px 4px 4px black;
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    top: 60px;
-}
-
-.button {
-    color: white;
-    background-color: gray;    
-    padding: 15px 30px 15px 30px;
-    border-radius: 4px;
-}
-
-.hoverButton:hover {
-    color: white;
-    text-decoration: underline;
-    background-image: linear-gradient(to bottom right, black, gray);
-}
-
-.hoverButton:active {
-    background-image: linear-gradient(to bottom right, gray, black);
-    color: black;
-}
-
-.leftDescription #github {
-    position: absolute;
-    bottom: 15px;
-    left: 100px;
-}
-
-.leftDescription #linkedin {
-    position: absolute;
-    bottom: 15px;
-    left: 195px;
-}
-
-.hover:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-.leftDescription {
-    position: relative;
-    top: 535px;
-}
-
-.buttons {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 8px;
-}*/
