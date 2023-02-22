@@ -1,26 +1,15 @@
-import React, { useContext, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import { VscGithub } from 'react-icons/vsc';
 import { MdOpenInNew } from 'react-icons/md';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
-import { useInView } from 'react-intersection-observer';
-import { projectsData } from '../content/projectsData';
+import useProjectCardFunctions from '../hooks/useProjectCardFunctions';
 import './Styles/ProjectsCard.css';
 import '../App.css';
-import DarkLightMode from '../context/DarkLightMode';
 
-function ProjectCard() {
-  const threshold = 0.3;
-  const { ref, inView, entry } = useInView({ threshold });
-  const { darkLightMode } = useContext(DarkLightMode);
-
-  useEffect(() => {
-    if (inView) {
-      entry.target.classList.add('hiddenOff');
-      ref('');
-    }
-  }, [entry, inView, ref]);
+function ProjectCard({ projectsData }) {
+  const { ref, onClick, darkLightMode, frontBack } = useProjectCardFunctions();
 
   return (
     <div id="projects" ref={ ref }>
@@ -38,6 +27,23 @@ function ProjectCard() {
         {' '}
         ls
       </h2>
+
+      <div className="FrontBackButtons">
+        <button
+          className={ `${darkLightMode}BackGround ${darkLightMode}Icons` }
+          onClick={ () => onClick(true) }
+          disabled={ frontBack }
+        >
+          <h4>Projetos FrontEnd</h4>
+        </button>
+        <button
+          className={ `${darkLightMode}BackGround ${darkLightMode}Icons` }
+          onClick={ () => onClick(false) }
+          disabled={ !frontBack }
+        >
+          <h4>Projetos BackEnd</h4>
+        </button>
+      </div>
 
       <div id="projects-div">
         {
@@ -73,5 +79,15 @@ function ProjectCard() {
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  projectsData: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    gif: PropTypes.string,
+    description: PropTypes.string,
+    link: PropTypes.string,
+    github: PropTypes.string,
+  })),
+}.isRequired;
 
 export default ProjectCard;
