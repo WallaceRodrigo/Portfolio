@@ -3,6 +3,7 @@ import projectPixelsArt from './videos/projectPixelsArt.gif';
 import shoppingCart from './videos/shoppingcart.gif';
 import tryunfo from './videos/tryunfo.gif';
 import trybewallet from './videos/trybewallet.gif';
+import trivia from './videos/trivia.gif';
 
 export const projectsFront = [
   {
@@ -35,6 +36,14 @@ export const projectsFront = [
     description: 'Meu primeiro projeto com Redux em conjunto com ReactJS é uma tabela para controle de gastos. Nessa tabela, o usuário pode adicionar despesas informando a descrição, valor, método de pagamento e moeda de câmbio. Além disso, a aplicação conta com funções para excluir e editar as despesas.',
     link: 'https://wallace-rodrigo-trybewallet.vercel.app/',
     github: 'https://github.com/WallaceRodrigo/trybewallet',
+  },
+
+  {
+    name: 'Trivia',
+    gif: trivia,
+    description: 'Mais um projeto que une Redux e ReactJS! Trata-se de um quiz de perguntas e respostas diversificadas. A aplicação conta com funções para carregar a foto de perfil do usuário por meio da API do Gravatar, salvar a pontuação do jogador e ordenar as pontuações em um ranking com todas as jogadas realizadas.',
+    link: 'https://wallace-rodrigo-trivia.vercel.app/',
+    github: 'https://github.com/WallaceRodrigo/trivia',
   },
 
 ];
